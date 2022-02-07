@@ -1,0 +1,104 @@
+.card {
+  width: 327px;
+  padding: 49px;
+}
+.card--orange {
+  background-color: #e38826;
+  border-radius: 10px 10px 0 0;
+}
+.card--orange .card__button {
+  color: #e38826;
+}
+.card--orange .card__button:hover {
+  background-color: #e38826;
+  color: rgba(255, 255, 255, 0.75);
+  outline: 2px solid rgba(255, 255, 255, 0.75);
+}
+.card--dark-cyan {
+  background-color: #006970;
+}
+.card--dark-cyan .card__button {
+  color: #006970;
+}
+.card--dark-cyan .card__button:hover {
+  background-color: #006970;
+  color: rgba(255, 255, 255, 0.75);
+  outline: 2px solid rgba(255, 255, 255, 0.75);
+}
+.card--very-dark-cyan {
+  background-color: #004241;
+  border-radius: 0 0 10px 10px;
+}
+.card--very-dark-cyan .card__button {
+  color: #004241;
+}
+.card--very-dark-cyan .card__button:hover {
+  background-color: #004241;
+  color: rgba(255, 255, 255, 0.75);
+  outline: 2px solid rgba(255, 255, 255, 0.75);
+}
+.card__title {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 32px 0;
+}
+.card__desc {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.card__button {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 15px 32px;
+  font-size: 15px;
+  border-radius: 15%/50%;
+  background-color: #f2f2f2;
+  margin-top: 25px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 88px 23px 88px 23px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: 1100px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card__button {
+    margin-top: 80px;
+  }
+  .card--orange {
+    border-radius: 10px 0 0 10px;
+  }
+  .card--very-dark-cyan {
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

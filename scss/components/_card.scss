@@ -1,0 +1,81 @@
+@use "../abstracts/colors";
+@use "../abstracts/fonts";
+
+
+// Card Styling
+.card {
+    width: 327px;
+    padding: 49px;
+
+    &--orange {
+        background-color: colors.$brightOrange;
+        border-radius: 10px 10px 0 0;
+
+        & .card__button {
+            color: colors.$brightOrange;
+        }
+
+        & .card__button:hover {
+            background-color: colors.$brightOrange;
+            color: colors.$transparentWhite;
+            outline: 2px solid colors.$transparentWhite;
+        }
+
+    }
+
+    &--dark-cyan {
+        background-color: colors.$darkCyan;
+
+        & .card__button {
+            color: colors.$darkCyan;
+        }
+
+        & .card__button:hover {
+            background-color: colors.$darkCyan;
+            color: colors.$transparentWhite;
+            outline: 2px solid colors.$transparentWhite;
+        }
+    }
+
+    &--very-dark-cyan {
+        background-color: colors.$veryDarkCyan;
+        border-radius: 0 0 10px 10px;
+
+        & .card__button {
+            color: colors.$veryDarkCyan;
+        }
+
+        & .card__button:hover {
+            background-color: colors.$veryDarkCyan;
+            color: colors.$transparentWhite;
+            outline: 2px solid colors.$transparentWhite;
+        }
+    }
+
+    &__title {
+        color: colors.$veryLightGray;
+        font-family: fonts.$fontTitle;
+        font-size: 32px;
+        text-transform: uppercase;
+        margin: 32px 0;
+    }
+
+    &__desc {
+        color: colors.$transparentWhite;
+        font-family: fonts.$fontDescription;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    &__button {
+        display: inline-block;
+        text-decoration: none;
+        font-family: fonts.$fontDescription;
+        padding: 15px 32px;
+        font-size: 15px;
+        border-radius: 15%/50%;
+        background-color: colors.$veryLightGray;
+        margin-top: 25px;      
+    }
+}
+

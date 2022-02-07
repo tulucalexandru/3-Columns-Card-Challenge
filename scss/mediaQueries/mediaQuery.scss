@@ -1,0 +1,22 @@
+@media (min-width: 1100px) {
+
+    body {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card {
+        &__button {
+            margin-top: 80px;
+        }
+
+        &--orange {
+            border-radius: 10px 0 0 10px;
+        }
+
+        &--very-dark-cyan {
+            border-radius: 0 10px 10px 0;
+        }
+    }
+
+}

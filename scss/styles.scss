@@ -1,0 +1,27 @@
+@use "abstracts/colors";
+@use "abstracts/fonts";
+@use "components/card";
+@use "components/footer";
+
+
+
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  body {
+      display: flex;
+      position: relative;
+      min-height: 100vh;
+      flex-direction: column;
+      padding: 88px 23px 88px 23px;
+      align-items: center;
+      justify-content: center;
+      background-color: colors.$veryLightGray;
+  }
+
+  @import "mediaQueries/mediaQuery";
