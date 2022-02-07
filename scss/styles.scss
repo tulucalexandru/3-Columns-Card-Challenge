@@ -2,6 +2,7 @@
 @use "abstracts/fonts";
 @use "components/card";
 @use "components/footer";
+@use "components/img";
 
 
 
@@ -13,15 +14,23 @@
   }
 
 
-  body {
+  .wrapper {
       display: flex;
       position: relative;
+      width: 100%;
       min-height: 100vh;
       flex-direction: column;
       padding: 88px 23px 88px 23px;
       align-items: center;
       justify-content: center;
       background-color: colors.$veryLightGray;
+  }
+
+  body {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center
   }
 
   @import "mediaQueries/mediaQuery";

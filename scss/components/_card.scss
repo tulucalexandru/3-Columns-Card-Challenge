@@ -75,7 +75,8 @@
         font-size: 15px;
         border-radius: 15%/50%;
         background-color: colors.$veryLightGray;
-        margin-top: 25px;      
+        margin-top: 25px;
+        transition: background-color 0.25s;   
     }
 }
 
